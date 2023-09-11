@@ -1,6 +1,7 @@
 {
   "modPriorities": [
     "minecraft",
+    "gtceu",
     "alltheores",
     "allthemodium",
     "kubejs",
@@ -121,34 +122,39 @@
     "zinc"
   ],
   "priorityOverrides": {},
-  "customTags": {},
   "tagOwnerships": {
-    "forge:rods/aluminum": [
-      "forge:rods/aluminium"
-    ],
-    "forge:storage_blocks/aluminum": [
-      "forge:storage_blocks/aluminium"
-    ],
-    "forge:raw_materials/aluminum": [
-      "forge:raw_materials/aluminium"
-    ],
-    "forge:ingots/aluminum": [
-      "forge:ingots/aluminium"
-    ],
-    "forge:gears/aluminum": [
-      "forge:gears/aluminium"
+    "forge:nuggets/aluminum": [
+        "forge:nuggets/aluminium"
     ],
     "forge:dusts/aluminum": [
-      "forge:dusts/aluminium"
+        "forge:dusts/aluminium"
     ],
-    "forge:storage_blocks/raw_aluminum": [
-      "forge:storage_blocks/raw_aluminium"
+    "forge:gears/aluminum": [
+        "forge:gears/aluminium"
+    ],
+    "forge:ingots/aluminum": [
+        "forge:ingots/aluminium"
+    ],
+    "forge:raw_materials/aluminum": [
+        "forge:raw_materials/aluminium"
+    ],
+    "forge:ores/aluminum": [
+        "forge:ores/aluminium"
     ],
     "forge:plates/aluminum": [
-      "forge:plates/aluminium"
+        "forge:plates/aluminium"
     ],
-    "forge:plastic": [
-      "pneumaticcraft:plastic_sheets"
+    "forge:rods/aluminum": [
+        "forge:rods/aluminium"
+    ],
+    "forge:wires/aluminum": [
+        "forge:wires/aluminium"
+    ],
+    "forge:storage_blocks/aluminum": [
+        "forge:storage_blocks/aluminium"
+    ],
+    "forge:storage_blocks/raw_aluminum": [
+        "forge:storage_blocks/raw_aluminium"
     ]
   },
   "itemTagInheritanceMode": "ALLOW",
