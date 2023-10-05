@@ -1,7 +1,7 @@
 
-
 const $PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
 const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty')
+const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
 const $ATMBlocks = Java.loadClass('com.thevortex.allthemodium.registry.ModRegistry')
 
 GTCEuStartupEvents.registry('tag_prefix', event => {
@@ -23,11 +23,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components(GTMaterials.Calcium, 1, GTMaterials.Magnesium, 1, GTMaterials.Carbon, 1, GTMaterials.Oxygen, 3)
 
     event.create('antimatter')
-        .fluid()
+        .gas()
         .element('antimatter')
         .color(0xac1aeb).iconSet('gas')
 
-    GTMaterials.Polonium.setProperty($PropertyKey.FLUID, new $FluidProperty(GTFluidTypes.GAS, false))
+    GTMaterials.Polonium.setProperty($PropertyKey.FLUID, new $FluidProperty())
+    GTMaterials.Polonium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.GAS, new GTFluidBuilder().state('gas'))
 })
 
 StartupEvents.postInit(event => {
