@@ -15,12 +15,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('fluorite')
         .gem().ore()
         .color(0x0c9949).iconSet('diamond')
-        .components(GTMaterials.Calcium, 1, GTMaterials.Fluorine, 2)
+        .components('1x calcium', '1x fluorine')
 
     event.create('dolomite')
         .dust().ore()
         .color(0xf2e4bd).iconSet('rough')
-        .components(GTMaterials.Calcium, 1, GTMaterials.Magnesium, 1, GTMaterials.Carbon, 1, GTMaterials.Oxygen, 3)
+        .components('1x calcium', '1x magnesium', '1x carbon', '3x oxygen')
 
     event.create('antimatter')
         .gas()
